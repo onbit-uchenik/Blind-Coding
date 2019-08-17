@@ -1,8 +1,7 @@
 //add element to string on keyup event, show pen while key is pressed. 
 let str="";
 let code=[];
-
-$('textarea').keyup(function (event) { 
+$('textarea').keyup(function (event) {
     addCode($(this).val(),event.which);
     $(this).val('');
     console.log(str);
@@ -13,13 +12,15 @@ $('textarea').keyup(function (event) {
 });
 
 $('textarea').keydown(function (event) {
+    if(event.which === 9) event.preventDefault();
     $('#pen').css({
         fontSize : "25px"
     })
 })
 
 function addCode(ch,asch) {
-    if(asch === 13) {
+    if(asch === 9) str = str + String.fromCharCode(9);
+    else if(asch === 13) {
         code.push(str);
         str='';
     }
@@ -39,3 +40,4 @@ function addCode(ch,asch) {
 // view the whole code on click of button view code for 1 sec only
 // screen time less than 5 users at a time ask from server..
 // after 1 sec is successful put request to server .. and un view the code ..
+
