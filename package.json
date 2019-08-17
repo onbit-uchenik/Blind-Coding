@@ -1,0 +1,30 @@
+{
+  "name": "blindcoding",
+  "version": "1.0.0",
+  "description": "Blind Coding Web Api...",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anubhav-Vats/Blind-Coding.git"
+  },
+  "keywords": [
+    "Blind Coding",
+    "Web Api"
+  ],
+  "author": "Onbit Syn (Anubhav vats)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anubhav-Vats/Blind-Coding/issues"
+  },
+  "homepage": "https://github.com/Anubhav-Vats/Blind-Coding#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}
